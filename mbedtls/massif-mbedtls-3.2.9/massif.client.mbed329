@@ -1,0 +1,1166 @@
+desc: --massif-out-file=client_massif
+cmd: ./mbedtls_client
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=781185
+mem_heap_B=2313
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1661976
+mem_heap_B=3180
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2446558
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2994564
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=3861719
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=4406604
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=5105631
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=5837976
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=detailed
+n10: 43905 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1404 in 10 places, all below massif's threshold (1.00%)
+ n2: 944 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 496 in 7 places, all below massif's threshold (1.00%)
+  n1: 448 0x161FEB: mbedtls_mpi_mul_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 448 0x171FE2: mbedtls_mpi_mul_mod (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n0: 448 in 9 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=9
+#-----------
+time=6326862
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=6961924
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=7389091
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=8033676
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=8457387
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=9337383
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=10120845
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=10620271
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=11259101
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=11969673
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=detailed
+n10: 43905 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1404 in 10 places, all below massif's threshold (1.00%)
+ n2: 944 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 496 in 7 places, all below massif's threshold (1.00%)
+  n1: 448 0x161FEB: mbedtls_mpi_mul_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 448 0x171FE2: mbedtls_mpi_mul_mod (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n0: 448 in 9 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=19
+#-----------
+time=12929326
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=13804590
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=14388279
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=14963512
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=15696050
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=16276610
+mem_heap_B=43905
+mem_heap_extra_B=431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=17269325
+mem_heap_B=60015
+mem_heap_extra_B=553
+mem_stacks_B=0
+heap_tree=peak
+n9: 60015 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n2: 16070 0x19C8B5: psa_crypto_local_output_alloc (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 16070 0x1906E8: psa_export_public_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 16070 0x14CC13: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 16070 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 16070 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 16070 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 16070 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 16070 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 16070 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 16070 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 2612 in 12 places, all below massif's threshold (1.00%)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 728 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 728 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=17841189
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=18427219
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=19004157
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=19727621
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=20496062
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=detailed
+n9: 60231 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n2: 16070 0x19C8B5: psa_crypto_local_output_alloc (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 16070 0x1906E8: psa_export_public_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 16070 0x14CC13: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 16070 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 16070 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 16070 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 16070 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 16070 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 16070 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 16070 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 2612 in 12 places, all below massif's threshold (1.00%)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 944 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 944 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=31
+#-----------
+time=21250444
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=22011847
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=22525032
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=23285151
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=23803664
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=24315350
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=24815522
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=25566094
+mem_heap_B=60199
+mem_heap_extra_B=449
+mem_stacks_B=0
+heap_tree=detailed
+n9: 60199 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n2: 16070 0x19C8B5: psa_crypto_local_output_alloc (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 16070 0x1906E8: psa_export_public_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 16070 0x14CC13: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 16070 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 16070 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 16070 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 16070 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 16070 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 16070 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 16070 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 2612 in 12 places, all below massif's threshold (1.00%)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 912 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 912 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=39
+#-----------
+time=26066086
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=26572973
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=27333835
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=27856367
+mem_heap_B=60199
+mem_heap_extra_B=449
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=28608242
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=29379872
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=30144441
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=30903978
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=31416642
+mem_heap_B=60231
+mem_heap_extra_B=473
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=32125134
+mem_heap_B=60503
+mem_heap_extra_B=577
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=32642600
+mem_heap_B=44769
+mem_heap_extra_B=647
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=33067597
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=33492128
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=33929698
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=detailed
+n11: 44825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1500 in 12 places, all below massif's threshold (1.00%)
+ n1: 1256 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 1256 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 512 0x19ED9F: mbedtls_psa_ecp_load_representation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 512 in 3 places, all below massif's threshold (1.00%)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=53
+#-----------
+time=34357288
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=34782207
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=35206590
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=35640620
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=36069571
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=36493624
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=36918698
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=37344792
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=37775727
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=38207002
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=detailed
+n11: 44825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1500 in 12 places, all below massif's threshold (1.00%)
+ n1: 1256 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 1256 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 512 0x19ED9F: mbedtls_psa_ecp_load_representation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 512 in 3 places, all below massif's threshold (1.00%)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=63
+#-----------
+time=38631310
+mem_heap_B=44793
+mem_heap_extra_B=639
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=39070810
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=39496405
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=39922307
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=40355755
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=40780312
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=41207140
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=41633965
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=42058143
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=42488293
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=detailed
+n11: 44825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1500 in 12 places, all below massif's threshold (1.00%)
+ n1: 1256 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 1256 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 512 0x19ED9F: mbedtls_psa_ecp_load_representation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 512 in 3 places, all below massif's threshold (1.00%)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=73
+#-----------
+time=42916616
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=43346296
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=43770110
+mem_heap_B=44857
+mem_heap_extra_B=671
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=44202749
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=44627513
+mem_heap_B=44793
+mem_heap_extra_B=639
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=45051689
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=45475765
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=45905045
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=46329594
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=46755650
+mem_heap_B=44825
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=detailed
+n11: 44825 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16765 0x121271: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 16765 0x1212DC: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 16765 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 3520 0x120B07: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 3520 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 3520 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 1792 0x1A403A: psa_initialize_key_slots (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 1792 0x19B2FA: mbedtls_psa_crypto_init_subsystem (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 1792 0x19B3DC: psa_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 1792 0x149790: mbedtls_ssl_tls13_crypto_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 1792 0x1457AD: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 1792 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 1792 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 1792 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 1792 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n0: 1792 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n0: 1500 in 12 places, all below massif's threshold (1.00%)
+ n1: 1256 0x160002: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 1256 in 10 places, all below massif's threshold (1.00%)
+ n1: 896 0x1A4224: psa_allocate_volatile_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 896 0x1A44FB: psa_reserve_free_key_slot (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 896 0x190940: psa_start_key_creation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 896 0x19AE26: psa_generate_key_custom (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 896 0x19B169: psa_generate_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n1: 896 0x14CBB1: mbedtls_ssl_tls13_generate_and_write_xxdh_key_exchange (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+       n1: 896 0x143834: ssl_tls13_write_key_share_ext (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+        n1: 896 0x145848: mbedtls_ssl_tls13_write_client_hello_exts (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+         n1: 896 0x14F463: ssl_write_client_hello_body (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+          n1: 896 0x14FC6C: mbedtls_ssl_write_client_hello (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+           n1: 896 0x1249B5: mbedtls_ssl_handshake_step (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+            n1: 896 0x124B1E: mbedtls_ssl_handshake (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+             n0: 896 0x112BE0: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 867 0x15AB31: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 867 0x15B498: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n1: 867 0x15B59F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+    n1: 867 0x15B6E6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+     n1: 867 0x15B811: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+      n0: 867 0x112A84: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 512 0x19ED9F: mbedtls_psa_ecp_load_representation (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n0: 512 in 3 places, all below massif's threshold (1.00%)
+ n1: 496 0x120AE0: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 496 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 496 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+ n1: 456 0x120AB6: ssl_handshake_init (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+  n1: 456 0x12134B: mbedtls_ssl_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+   n0: 456 0x112B77: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_client)
+#-----------
+snapshot=83
+#-----------
+time=47203751
+mem_heap_B=44865
+mem_heap_extra_B=703
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=47678739
+mem_heap_B=45097
+mem_heap_extra_B=783
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=48102469
+mem_heap_B=43247
+mem_heap_extra_B=289
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=48609094
+mem_heap_B=44881
+mem_heap_extra_B=295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=49297560
+mem_heap_B=50647
+mem_heap_extra_B=617
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=50700354
+mem_heap_B=47415
+mem_heap_extra_B=569
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=51130885
+mem_heap_B=47196
+mem_heap_extra_B=572
+mem_stacks_B=0
+heap_tree=empty

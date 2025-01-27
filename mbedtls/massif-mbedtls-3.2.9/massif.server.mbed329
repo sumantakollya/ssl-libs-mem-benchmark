@@ -1,0 +1,1137 @@
+desc: --massif-out-file=server_massif
+cmd: ./mbedtls_server
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=294124
+mem_heap_B=216
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=304900
+mem_heap_B=216
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=detailed
+n1: 216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17CDCD: entropy_update (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x17CFFD: entropy_gather_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x17D17B: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+#-----------
+snapshot=3
+#-----------
+time=304900
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=305091
+mem_heap_B=216
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=323458
+mem_heap_B=688
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=324778
+mem_heap_B=1918
+mem_heap_extra_B=42
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=325297
+mem_heap_B=1918
+mem_heap_extra_B=42
+mem_stacks_B=0
+heap_tree=detailed
+n3: 1918 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1230 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1230 0x15B8CC: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1230 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 472 0x48DA92D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48DA92D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x18C64A: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 472 0x15B8CC: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 472 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=325297
+mem_heap_B=1446
+mem_heap_extra_B=26
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=781249
+mem_heap_B=2313
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1662040
+mem_heap_B=3180
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1664043
+mem_heap_B=3244
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=1664524
+mem_heap_B=3308
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1665005
+mem_heap_B=3372
+mem_heap_extra_B=92
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1666995
+mem_heap_B=3436
+mem_heap_extra_B=100
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1667476
+mem_heap_B=3500
+mem_heap_extra_B=108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1667957
+mem_heap_B=3564
+mem_heap_extra_B=116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1669329
+mem_heap_B=3796
+mem_heap_extra_B=132
+mem_stacks_B=0
+heap_tree=detailed
+n7: 3796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1230 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1230 0x15B8CC: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1230 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 867 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B792: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 232 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 232 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=1669952
+mem_heap_B=4060
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1671168
+mem_heap_B=4068
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1677576
+mem_heap_B=4068
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=detailed
+n8: 4068 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1230 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1230 0x15B8CC: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1230 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 867 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B792: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 272 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 272 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n2: 272 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 232 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 232 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=1677576
+mem_heap_B=3201
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1677891
+mem_heap_B=1971
+mem_heap_extra_B=133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1677982
+mem_heap_B=2443
+mem_heap_extra_B=149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1679302
+mem_heap_B=4148
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1679821
+mem_heap_B=4148
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=detailed
+n8: 4148 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 472 0x48DA92D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48DA92D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n2: 472 0x18C64A: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 472 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 472 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 272 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 272 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n2: 272 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 232 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 232 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=1679821
+mem_heap_B=3676
+mem_heap_extra_B=148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2321945
+mem_heap_B=4893
+mem_heap_extra_B=171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=3559119
+mem_heap_B=5125
+mem_heap_extra_B=187
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=3559917
+mem_heap_B=5389
+mem_heap_extra_B=203
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=3561035
+mem_heap_B=5645
+mem_heap_extra_B=211
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=3561551
+mem_heap_B=5645
+mem_heap_extra_B=211
+mem_stacks_B=0
+heap_tree=detailed
+n8: 5645 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1217 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1217 0x18BF9F: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 1217 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 1217 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 792 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 536 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n3: 536 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x15E632: mbedtls_asn1_get_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9A71: asn1_get_nonzero_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x1A9B81: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n0: 264 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+  n1: 256 0x160438: mbedtls_mpi_copy (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA8BF: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9BB4: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 464 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n2: 464 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B824: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 232 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=3561551
+mem_heap_B=5381
+mem_heap_extra_B=195
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=3561632
+mem_heap_B=5389
+mem_heap_extra_B=211
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=3562079
+mem_heap_B=5397
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=3562465
+mem_heap_B=5389
+mem_heap_extra_B=211
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=3562546
+mem_heap_B=5645
+mem_heap_extra_B=219
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=3563613
+mem_heap_B=5901
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=3564073
+mem_heap_B=5901
+mem_heap_extra_B=227
+mem_stacks_B=0
+heap_tree=detailed
+n8: 5901 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1217 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1217 0x18BF9F: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 1217 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 1217 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1048 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 528 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n3: 528 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x15E632: mbedtls_asn1_get_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n2: 256 0x1A9A71: asn1_get_nonzero_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x1A9C31: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+  n3: 520 0x160438: mbedtls_mpi_copy (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA8BF: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9BB4: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA938: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9C66: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 464 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n2: 464 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B824: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 232 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=3564073
+mem_heap_B=5645
+mem_heap_extra_B=219
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=3564154
+mem_heap_B=5781
+mem_heap_extra_B=235
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=3564954
+mem_heap_B=5909
+mem_heap_extra_B=243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=3566063
+mem_heap_B=6037
+mem_heap_extra_B=251
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=3566468
+mem_heap_B=6037
+mem_heap_extra_B=251
+mem_stacks_B=0
+heap_tree=detailed
+n8: 6037 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1217 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1217 0x18BF9F: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 1217 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 1217 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1184 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n5: 776 0x160438: mbedtls_mpi_copy (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA8BF: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9BB4: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA938: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9C66: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA8EA: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9CBD: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA911: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9D17: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 8 in 1 place, below massif's threshold (1.00%)
+  n1: 408 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n3: 408 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 136 0x15E632: mbedtls_asn1_get_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n2: 136 0x1A9A71: asn1_get_nonzero_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 136 0x1A9C8A: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 136 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 136 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 136 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n0: 136 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 0 in 3 places, all below massif's threshold (1.00%)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 464 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n2: 464 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B824: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 232 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=3566468
+mem_heap_B=5901
+mem_heap_extra_B=235
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=3566549
+mem_heap_B=6029
+mem_heap_extra_B=243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=3567251
+mem_heap_B=6157
+mem_heap_extra_B=251
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=3568245
+mem_heap_B=6285
+mem_heap_extra_B=259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=3568638
+mem_heap_B=6285
+mem_heap_extra_B=259
+mem_stacks_B=0
+heap_tree=detailed
+n8: 6285 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1432 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n7: 1032 0x160438: mbedtls_mpi_copy (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA8BF: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9BB4: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA938: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9C66: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1A9D5F: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1A9DA7: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA8EA: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9CBD: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA911: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9D17: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 8 in 1 place, below massif's threshold (1.00%)
+  n1: 400 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n3: 400 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x15E632: mbedtls_asn1_get_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n2: 128 0x1A9A71: asn1_get_nonzero_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x1A9D3B: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 0 in 4 places, all below massif's threshold (1.00%)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+ n2: 1217 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1217 0x18BF9F: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 1217 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 1217 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 464 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n2: 464 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B824: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 232 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=3568638
+mem_heap_B=6157
+mem_heap_extra_B=251
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=3568719
+mem_heap_B=6293
+mem_heap_extra_B=267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=3569496
+mem_heap_B=6421
+mem_heap_extra_B=275
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=3572553
+mem_heap_B=6421
+mem_heap_extra_B=275
+mem_stacks_B=0
+heap_tree=peak
+n8: 6421 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 1705 0x18C6F9: mbedtls_pk_load_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1705 0x18C81D: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 1705 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 1568 0x1600E2: mbedtls_mpi_grow (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n8: 1160 0x160438: mbedtls_mpi_copy (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA8BF: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9BB4: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 256 0x1AA938: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 256 0x1A9C66: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 256 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 256 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 256 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 256 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1A9D5F: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1A9DA7: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1A9DEE: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA8EA: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9CBD: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 128 0x1AA911: mbedtls_rsa_import (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 128 0x1A9D17: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 128 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 128 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 128 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n0: 128 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n0: 8 in 1 place, below massif's threshold (1.00%)
+  n1: 408 0x16033A: mbedtls_mpi_resize_clear (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n3: 408 0x1613F8: mbedtls_mpi_read_binary (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 264 0x1AA9F8: mbedtls_rsa_import_raw (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 264 0x1A9F6E: mbedtls_rsa_parse_pubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 264 0x18B146: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 264 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 264 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 264 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n1: 264 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+           n1: 264 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+            n0: 264 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 136 0x15E632: mbedtls_asn1_get_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n2: 136 0x1A9A71: asn1_get_nonzero_mpi (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 136 0x1A9DCB: mbedtls_rsa_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 136 0x18B869: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 136 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n1: 136 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+          n0: 136 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 0 in 5 places, all below massif's threshold (1.00%)
+    n0: 8 in 1 place, below massif's threshold (1.00%)
+ n2: 1217 0x187618: mbedtls_pem_read_buffer (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 1217 0x18BF9F: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 1217 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n0: 1217 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 867 0x15AC11: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 867 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 867 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 867 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 867 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 867 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n1: 464 0x189C19: rsa_alloc_wrap (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n2: 464 0x187E9C: mbedtls_pk_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B0EA: mbedtls_pk_parse_subpubkey (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x15B122: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 232 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n1: 232 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+        n1: 232 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+         n0: 232 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 232 0x18B824: pk_parse_key_pkcs8_unencrypted_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 232 0x18BFCE: mbedtls_pk_parse_key (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 232 0x18C862: mbedtls_pk_parse_keyfile (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n0: 232 0x112B21: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 384 0x155BF6: mbedtls_x509_get_name (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15AF5C: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 192 0x15B09D: x509_crt_parse_der_core (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 192 0x15B578: mbedtls_x509_crt_parse_der_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 192 0x15B67F: mbedtls_x509_crt_parse_der (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n1: 192 0x15B7C6: mbedtls_x509_crt_parse (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+      n1: 192 0x15B8F1: mbedtls_x509_crt_parse_file (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+       n0: 192 0x112AC5: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+ n2: 216 0x18190B: mbedtls_md_setup (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n1: 216 0x17D2D7: mbedtls_entropy_func (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+   n1: 216 0x16B740: mbedtls_ctr_drbg_reseed_internal (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+    n1: 216 0x16B9F1: mbedtls_ctr_drbg_seed (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+     n0: 216 0x112A82: main (in /home/sumakoll/Git/ssl-libs-mem-benchmark/mbedtls/mbedtls_server)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=3572553
+mem_heap_B=6285
+mem_heap_extra_B=259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3572842
+mem_heap_B=5068
+mem_heap_extra_B=236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3573203
+mem_heap_B=3363
+mem_heap_extra_B=221
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3573430
+mem_heap_B=3835
+mem_heap_extra_B=237
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3574494
+mem_heap_B=4859
+mem_heap_extra_B=245
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3576817
+mem_heap_B=3835
+mem_heap_extra_B=237
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=3576950
+mem_heap_B=3363
+mem_heap_extra_B=221
+mem_stacks_B=0
+heap_tree=empty
